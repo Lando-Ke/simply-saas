@@ -1,0 +1,157 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+/* Custom Filament theme to match task dashboard styling */
+
+:root {
+    --primary-50: rgb(238 242 255);
+    --primary-400: rgb(129 140 248);
+    --primary-500: rgb(99 102 241);
+    --primary-600: rgb(79 70 229);
+    --primary-700: rgb(67 56 202);
+    --primary-800: rgb(55 48 163);
+    --primary-900: rgb(49 46 129);
+    --primary-950: rgb(30 27 75);
+}
+
+/* Override Filament's default primary color to match indigo theme */
+.fi-primary {
+    --c-50: var(--primary-50);
+    --c-400: var(--primary-400);
+    --c-500: var(--primary-500);
+    --c-600: var(--primary-600);
+    --c-700: var(--primary-700);
+    --c-800: var(--primary-800);
+    --c-900: var(--primary-900);
+    --c-950: var(--primary-950);
+}
+
+/* Match the card styling from tasks dashboard */
+.fi-section {
+    @apply rounded-lg shadow;
+}
+
+.fi-section-header {
+    @apply border-b border-gray-200 dark:border-gray-600;
+}
+
+.fi-section-content {
+    @apply p-6;
+}
+
+/* Match button styling */
+.fi-btn-primary {
+    @apply bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500;
+}
+
+/* Ensure consistent spacing and typography */
+.fi-header-heading {
+    @apply text-2xl font-semibold text-gray-900 dark:text-white;
+}
+
+.fi-header-subheading {
+    @apply text-gray-600 dark:text-gray-400 mt-2;
+}
+
+/* Match status badge colors from task dashboard */
+.fi-badge-color-success {
+    @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+}
+
+.fi-badge-color-warning {
+    @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+}
+
+.fi-badge-color-danger {
+    @apply bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+}
+
+.fi-badge-color-info {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200;
+}
+
+.fi-badge-color-gray {
+    @apply bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200;
+}
+
+/* Ensure consistent form field styling */
+.fi-input {
+    @apply border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md;
+}
+
+.fi-select {
+    @apply border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md;
+}
+
+/* Match table styling */
+.fi-table {
+    @apply bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden;
+}
+
+.fi-table-header {
+    @apply bg-gray-50 dark:bg-gray-700 border-b border-gray-200 dark:border-gray-600;
+}
+
+/* Dashboard widgets consistency */
+.fi-wi-stats-overview-stat {
+    @apply bg-white dark:bg-gray-800 shadow rounded-lg;
+}
+
+.fi-wi-chart {
+    @apply bg-white dark:bg-gray-800 shadow rounded-lg;
+}
+
+/* Ensure sidebar matches */
+.fi-sidebar {
+    @apply bg-white dark:bg-gray-800;
+}
+
+.fi-sidebar-nav-item {
+    @apply hover:bg-gray-50 dark:hover:bg-gray-700;
+}
+
+.fi-sidebar-nav-item-active {
+    @apply bg-indigo-50 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-300;
+}
+
+/* Top navigation bar */
+.fi-topbar {
+    @apply bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-600;
+}
+
+/* Ensure consistent focus states */
+.focus\:ring-primary-500:focus {
+    --tw-ring-color: rgb(99 102 241);
+}
+
+.focus\:border-primary-500:focus {
+    --tw-border-opacity: 1;
+    border-color: rgb(99 102 241);
+}
+
+/* Resource table improvements */
+.fi-ta-table {
+    @apply border-gray-200 dark:border-gray-600;
+}
+
+.fi-ta-row:hover {
+    @apply bg-gray-50 dark:bg-gray-700;
+}
+
+/* Page improvements */
+.fi-page {
+    @apply bg-gray-50 dark:bg-gray-900 min-h-screen;
+}
+
+.fi-page-content {
+    @apply max-w-none;
+}
+
+/* Make charts more prominent */
+.fi-wi-chart-container {
+    @apply p-6;
+}
+
+/* Tenant switcher styling */
+.fi-wi-tenant-switcher {
+    @apply bg-white dark:bg-gray-800 shadow rounded-lg p-4;
+}
